@@ -11,7 +11,7 @@ export default function Greeting() {
         data-aos-easing="linear"
       >
         <img
-          src="images/bismillah.png"
+          src="assets/images/bismillah.png"
           className="h-14"
           alt="Bismillahirrahmaanirrahiim"
         />
