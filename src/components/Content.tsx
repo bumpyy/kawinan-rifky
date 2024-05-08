@@ -1,28 +1,42 @@
+import { TimePropsType } from "../lib/types";
+import Divider from "./Divider";
 import About from "./content/About";
 import Greeting from "./content/Greeting";
 import Location from "./content/Location";
 import Rsvp from "./content/Rsvp";
 import Time from "./content/Time";
 
-export default function Content() {
+export default function Content({ day, hour, min, sec }: TimePropsType) {
   return (
-    <div className="container">
+    <div className="">
       {/* <!-- Begin regular-section--> */}
       <Greeting />
       {/* <!-- End regular-section--> */}
 
       {/* <!-- Begin Waktu Section --> */}
-      <Time />
+      <Time
+        day={day}
+        hour={hour}
+        min={min}
+        sec={sec}
+      />
       {/* <!-- End Waktu Content --> */}
 
       {/* <!-- Begin Lokasi Section --> */}
       <Location />
       {/* <!-- End Lokasi Content --> */}
-
-      {/* <!-- Begin Tentang Sherly and Daeng --> */}
+      <Divider />
+      {/* <!-- Begin Tentang Rifky and Fira --> */}
       <About />
-      {/* <!-- End Tentang Sherly dan Daeng --> */}
-
+      <div className="w-full">
+        <img
+          className="w-full object-cover"
+          src="assets/images/about-bg.jpg"
+          alt=""
+        />
+      </div>
+      {/* <!-- End Tentang Rifky dan Fira --> */}
+      <Divider />
       {/* <!-- Begin RSVP Content --> */}
       <Rsvp />
       {/* <!-- End RSVP Content --> */}

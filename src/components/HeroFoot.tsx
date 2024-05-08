@@ -30,7 +30,7 @@ export default function HeroFoot() {
   ];
 
   return (
-    <ul className="flex gap-8 shadow-lg sticky top-0 max-md:hidden text-center font-semibold justify-center text-primary bg-white py-2">
+    <ul className="flex text-lg gap-8 shadow-lg sticky top-0 max-md:hidden text-center font-semibold justify-center text-primary bg-white py-2">
       {navItem.map((item, index) => {
         return (
           <li
