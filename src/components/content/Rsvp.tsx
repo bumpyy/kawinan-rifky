@@ -1,90 +1,71 @@
-import { MEMPELAI_PRIA, MEMPELAI_WANITA } from "../../lib/constants";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 export default function Rsvp() {
   return (
-    <section
-      className="section-dark contact"
-      id="rsvp"
-    >
-      <div className="container">
-        <div className="columns is-multiline">
-          <div className="column is-12 prolog">
-            <h1
-              className="title has-text-centered section-title"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-            >
-              Konfirmasi Kehadiran
-            </h1>
-          </div>
-          <div
-            className="column is-12 prolog has-text-centered"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-          >
-            <p className="h2 subtitle">
-              Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
-              Bapak/Ibu/Saudara/Saudari berkenan hadir memberikan doa restu.
-              Jika bisa hadir kami tunggu konfirmasinya, Informasi: Di meja
-              penerima tamu akan kami sediakan hand sanitizer dan pemeriksaan
-              suhu tubuh. Jika tidak memungkinkan untuk hadir di pernikahan
-              kami,tidak mengapa, semoga bisa berjumpa di lain kesempatan Stay
-              safe & jaga kesehatan ya :)
-            </p>
+    <section className="text-center flex-col flex gap-4">
+      <div className="my-8 flex flex-col gap-8 items-center">
+        <h2 className="text-6xl capitalize">Share Love</h2>
+        <p className="font-semibold md:w-1/2 lg:w-2/5 sm:w-4/5">
+          Doa & restu anda di pernikahan kami tentunya sangat berarti. Namun
+          jika anda ingin memberi lebih, kami dengan senang hati menerimanya dan
+          akan semakin melengkapi kebahagiaan kami.
+        </p>
+        <div className="lg:max-w-48 max-w-20 md:max-w-24">
+          <img
+            src="assets/icons/gift.png"
+            alt=""
+            draggable="false"
+          />
+        </div>
+        <div className="flex flex-col items-center">
+          <p className="font-semibold text2">BCA - 6395468069</p>
+          <p className="font-semibold">Syafira Nurhanifa Fauziah</p>
 
-            <a
-              href={`https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20${MEMPELAI_PRIA},%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=`}
-              className="button btn-whatsapp"
-              target="_blank"
-              data-aos="zoom-in"
-            >
-              <i className="fab fa-whatsapp"></i>
-              &nbsp;&nbsp; Kabari {MEMPELAI_PRIA}
-            </a>
-
-            <a
-              href={`https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20${MEMPELAI_WANITA},%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=`}
-              className="button btn-whatsapp"
-              target="_blank"
-              data-aos="zoom-in"
-            >
-              <i className="fab fa-whatsapp"></i>
-              &nbsp;&nbsp;Kabari {MEMPELAI_WANITA}
-            </a>
-
-            <div
-              data-aos="fade-up"
-              data-aos-easing="linear"
-            >
+          <CopyToClipboard text={"6395468069"}>
+            <div className="flex items-center gap-2 text-xl">
               <img
-                src="image/divider-leaves.png"
-                className="divider has-text-centered"
-                alt="~~~"
+                src="assets/icons/copy.png"
+                alt=""
+                className="w-4 md:w-6"
               />
+              <span>Salin Nomor</span>
             </div>
-            <div className="space40px"></div>
-            <p
-              className="h2 subtitle"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-            >
-              <span>Kami yang berbahagia,</span>
-              {/* <br> */}
-              <a
-                className="instagram"
-                href="https://instagram.com/cewe"
-                target="_blank"
-              >
-                <i className="fab fa-instagram"></i> <span>@si cewe</span>
-              </a>
-              <a
-                className="instagram"
-                href="https://instagram.com/laki"
-                target="_blank"
-              >
-                <i className="fab fa-instagram"></i> <span>@si laki</span>
-              </a>
-            </p>
-          </div>
+          </CopyToClipboard>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <p className="font-semibold">BCA - 6395468077</p>
+          <p className="font-semibold">Muhammad Rifky Andreawan</p>
+
+          <CopyToClipboard text={"6395468077"}>
+            <div className="flex items-center gap-2 text-xl">
+              <img
+                src="assets/icons/copy.png"
+                alt=""
+                className="w-4 md:w-6"
+              />
+              <span>Salin Nomor</span>
+            </div>
+          </CopyToClipboard>
+        </div>
+      </div>
+
+      <div className="my-8 flex flex-col gap-8 items-center">
+        <h2 className="text-6xl capitalize">Send Gift</h2>
+        <div className="lg:max-w-48 max-w-20 md:max-w-24">
+          <img
+            src="assets/icons/house.png"
+            alt=""
+            draggable="false"
+          />
+        </div>
+
+        <div className="md:w-1/2 lg:w-2/5 sm:w-4/5 font-bold ">
+          <p className="mb-4">
+            Jl. Sindangkarsa No.199 rt03/010 (Gg. Haji Jamal) Kel. Sukamaju
+            Baru, Kota Depok, Tapos, Jawa Barat, 16455
+          </p>
+          <p>Nama Penerima: Syafira / Fira</p>
         </div>
       </div>
     </section>

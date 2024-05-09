@@ -13,7 +13,7 @@ function CountdownCard({
 }) {
   return (
     <div
-      className={`text-2xl font-semibold text-center w-full max-w-28 p-4 bg-primary rounded-3xl ${className}`}
+      className={`text-4xl font-semibold text-center w-full max-w-28 p-4 bg-primary rounded-3xl ${className}`}
     >
       <p>{("00" + countdown).slice(-2)}</p>
       <p>{text}</p>
@@ -27,8 +27,8 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
       className="text-center flex items-center flex-col gap-4"
       id="Waktu"
     >
-      <h2 className="capitalize text-3xl">save the date</h2>
-      <h2 className="capitalize text-5xl">our special day</h2>
+      <h2 className="capitalize text-5xl font-semibold">save the date</h2>
+      <h2 className="capitalize text-7xl font-semibold">our special day</h2>
 
       <div className="grid max-w-96 w-full mx-auto justify-items-center my-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
         <CountdownCard
@@ -53,7 +53,7 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
       </div>
 
       <div className="flex flex-col gap-4 items-center font-semibold">
-        <p className="text-4xl">
+        <p className="text-5xl">
           {DATE.toLocaleString("id", { weekday: "long" })},{" "}
           {DATE.toLocaleString("id", {
             day: "2-digit",
@@ -64,17 +64,17 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
             .join(" ")}
         </p>
 
-        <blockquote className="text-center md:w-3/4 lg:w-3/5">
+        <blockquote className="text-center space-y-2   text-2xl">
           <p>
             “Once in awhile, right in the middle of an ordinary life, love gives
             us a fairy tale.”
           </p>
-          <p>Unknown</p>
+          <p>- Unknown</p>
         </blockquote>
         <p></p>
       </div>
 
-      <Divider />
+      <Divider imageUrl="assets/images/divider-love.png" />
 
       <div className="flex flex-col gap-10">
         <DateGroup
@@ -120,9 +120,9 @@ function DateGroup({
   end?: number;
 }) {
   return (
-    <div className="container flex flex-col gap-2">
-      <p className="font-semibold text-2xl capitalize">{title}</p>
-      <p className="text-xl">
+    <div className=" flex flex-col gap-2 text-2xl">
+      <p className="font-bold capitalize text-4xl font-">{title}</p>
+      <p className="">
         {DATE.toLocaleString("id", { weekday: "long" })},{" "}
         {DATE.toLocaleString("id", {
           day: "2-digit",
@@ -132,7 +132,7 @@ function DateGroup({
           .split("/")
           .join(".")}
       </p>
-      <p className="text-xl">
+      <p className="">
         <span>Pukul </span>
         {new Date(DATE.getTime() + start * 60 * 60 * 1000).toLocaleString(
           "id",

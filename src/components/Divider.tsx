@@ -7,7 +7,7 @@ export default function Divider({
     <div
       data-aos="fade-up"
       data-aos-easing="linear"
-      className="max-w-lg mx-auto"
+      className="max-w-lg container my-8 mx-auto"
     >
       <img
         draggable="false"

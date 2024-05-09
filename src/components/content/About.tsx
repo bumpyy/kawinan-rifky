@@ -26,19 +26,19 @@ export default function About() {
   ];
 
   return (
-    <section className="container text-center flex flex-col gap-8">
-      <h2 className="capitalize text-4xl">Our Love story</h2>
+    <section className=" text-center flex flex-col gap-8">
+      <h2 className="capitalize text-6xl font-bold">Our Love story</h2>
 
       <div className="lg:w-3/4 flex flex-col gap-12 mx-auto">
         {TIMELINE_DATA.map((data, index) => (
           <div
-            className="flex"
+            className="flex max-md:flex-col"
             key={index}
           >
-            <div className="basis-1/5 text-xl font-semibold shrink-0">
+            <div className="basis-1/6 text-4xl font-semibold shrink-0">
               {data.date}
             </div>
-            <div className="text-lg">{data.text}</div>
+            <div className="text-3xl">{data.text}</div>
           </div>
         ))}
       </div>

@@ -37,7 +37,7 @@ export default function HeroFoot() {
             key={index}
             className={`${
               index === 0 ? "border-b-2" : ""
-            } hover:border-b-2 border-primary capitalize`}
+            } hover:border-b-2 border-primary uppercase text-2xl  `}
           >
             <a href={item.url}>{item.name}</a>
           </li>

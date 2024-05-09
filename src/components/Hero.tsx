@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav";
 export default function Hero({ day, hour, min, sec }: TimePropsType) {
   return (
     <>
-      <section className="text-white shadow-lg bg-fixed text-xl hero filter bg-primary ">
+      <div className="text-white shadow-lg bg-fixed text-xl hero filter bg-primary ">
         {/*  Begin Mobile Nav  */}
         <MobileNav />
         {/*  End Mobile Nav  */}
@@ -22,7 +22,7 @@ export default function Hero({ day, hour, min, sec }: TimePropsType) {
 
         {/* //  Begin Hero Menu  */}
         {/* //  End Hero Menu  */}
-      </section>
+      </div>
       <HeroFoot />
     </>
   );
