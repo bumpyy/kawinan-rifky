@@ -25,12 +25,12 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
   return (
     <section
       className="text-center flex items-center flex-col gap-4"
-      id="Waktu"
+      id="waktu"
     >
       <h2 className="capitalize text-5xl font-semibold">save the date</h2>
       <h2 className="capitalize text-7xl font-semibold">our special day</h2>
 
-      <div className="grid max-w-96 w-full mx-auto justify-items-center my-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+      <div className="grid max-w-96 w-full mx-auto justify-items-center my-8 grid-cols-2 md:grid-cols-3 gap-4 ">
         <CountdownCard
           text="Hari"
           countdown={day}
@@ -63,34 +63,9 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
             .split("/")
             .join(" ")}
         </p>
-
-        <blockquote className="text-center space-y-2   text-2xl">
-          <p>
-            “Once in awhile, right in the middle of an ordinary life, love gives
-            us a fairy tale.”
-          </p>
-          <p>- Unknown</p>
-        </blockquote>
-        <p></p>
-      </div>
-
-      <Divider imageUrl="assets/images/divider-love.png" />
-
-      <div className="flex flex-col gap-10">
-        <DateGroup
-          title="Akad Nikah"
-          end={1.5}
-        />
-
-        <DateGroup
-          title="Resepsi"
-          start={2}
-          end={4.5}
-        />
-
         {/* TODO: Add calendar notification feature */}
         <div
-          className=""
+          className="lg:max-w-72 max-w-40 md:max-w-48"
           data-aos="fade-up"
           data-aos-easing="linear"
         >
@@ -101,10 +76,35 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
             data-tooltip="Add to Calendar"
             data-aos="zoom-in"
           >
-            <i className="far fa-calendar-plus"></i>
-            Google Calendar
+            <img
+              src="assets/images/save-calendar.png"
+              alt=""
+              draggable="false"
+            />
           </a>
         </div>
+        <blockquote className="text-center space-y-2   text-2xl">
+          <p>
+            “Once in awhile, right in the middle of an ordinary life, love gives
+            us a fairy tale.”
+          </p>
+          <p>- Unknown</p>
+        </blockquote>
+      </div>
+
+      <Divider imageUrl="assets/images/divider-love.png" />
+
+      <div className="flex flex-col items-center gap-10">
+        <DateGroup
+          title="Akad Nikah"
+          end={1.5}
+        />
+
+        <DateGroup
+          title="Resepsi"
+          start={2}
+          end={4.5}
+        />
       </div>
     </section>
   );

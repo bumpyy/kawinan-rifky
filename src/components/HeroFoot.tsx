@@ -24,8 +24,8 @@ export default function HeroFoot() {
       url: "#tentang-mempelai",
     },
     {
-      name: "rsvp",
-      url: "#rsvp",
+      name: "share love",
+      url: "#share-love",
     },
   ];
 

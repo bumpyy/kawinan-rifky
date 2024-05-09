@@ -1,7 +1,7 @@
 export default function Location() {
   return (
     <section
-      className="text-center flex items-center flex-col gap-4 mt-10"
+      className="text-center flex items-center flex-col gap-8 mt-10"
       id="lokasi"
     >
       <div className="container flex flex-col gap-2">
@@ -13,7 +13,7 @@ export default function Location() {
       </div>
 
       <div
-        className=""
+        className="lg:max-w-72 max-w-40 md:max-w-48"
         data-aos="fade-up"
         data-aos-easing="linear"
       >
@@ -24,8 +24,11 @@ export default function Location() {
           data-tooltip="Open map"
           data-aos="zoom-in"
         >
-          <i className=""></i>
-          Open Map
+          <img
+            src="assets/images/open-map.png"
+            alt=""
+            draggable="false"
+          />
         </a>
       </div>
     </section>

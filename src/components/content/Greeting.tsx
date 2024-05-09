@@ -6,7 +6,10 @@ import Divider from "../Divider";
 
 export default function Greeting() {
   return (
-    <section className="flex text-center flex-col gap-12 justify-center mt-20 mb-12 items-center ">
+    <section
+      id="home"
+      className="flex text-center flex-col gap-12 justify-center mt-20 mb-12 items-center "
+    >
       <div
         data-aos="fade-up"
         data-aos-easing="linear"

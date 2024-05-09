@@ -26,7 +26,10 @@ export default function About() {
   ];
 
   return (
-    <section className=" text-center flex flex-col gap-8">
+    <section
+      id="tentang-mempelai"
+      className="text-center flex flex-col gap-8"
+    >
       <h2 className="capitalize text-6xl font-bold">Our Love story</h2>
 
       <div className="lg:w-3/4 flex flex-col gap-12 mx-auto">
