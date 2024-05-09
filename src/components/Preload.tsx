@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { MEMPELAI_PRIA, MEMPELAI_WANITA } from "../lib/constants";
 
 export default function Preload({
@@ -7,6 +7,14 @@ export default function Preload({
   openHandler: Dispatch<SetStateAction<boolean>>;
 }) {
   const [isAnimating, setIsAnimating] = useState(false);
+  const guestName = useRef<string | null>("");
+  useEffect(() => {
+    const sp = new URLSearchParams(window.location.search);
+    guestName.current = sp.get("guest"); // world
+    console.log();
+
+    return () => {};
+  }, []);
 
   return (
     <div
@@ -31,7 +39,9 @@ export default function Preload({
       />
       <div className="flex flex-col max-lg:gap-4 items-center">
         <p className="text-6xl font-semibold">dear</p>
-        <p className="text-8xl font-semibold">Guest</p>
+        <p className="text-8xl font-semibold">
+          {guestName.current ? guestName.current : "Guest"}
+        </p>
         <p className="">you are cordially invited to our wedding</p>
         <div className="mt-4 lg:max-w-72 cursor-pointer max-w-48 md:max-w-56">
           <img

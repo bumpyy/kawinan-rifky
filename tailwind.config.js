@@ -16,6 +16,9 @@ export default {
       backgroundImage: {
         holdingHand: "url('/assets/images/header-bg.jpg')",
       },
+      height: {
+        "screen-dynamic": "100dvh",
+      },
       colors: {
         primary: "#c7b09d",
         secondary: "#eae6df",

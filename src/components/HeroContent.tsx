@@ -8,7 +8,7 @@ import { TimePropsType } from "../lib/types.js";
 
 export default function HeroContent({ day, hour, min, sec }: TimePropsType) {
   return (
-    <div className="grid justify-center h-screen items-center">
+    <div className="grid justify-center h-screen-dynamic items-center">
       <div className="container">
         <div className="text-center flex flex-col gap-10 mb-14">
           <h1 className="text-3xl">Undangan Pernikahan</h1>

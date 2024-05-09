@@ -30,7 +30,21 @@ export default function Greeting() {
 
       <Divider />
       <div className="text-center font-garamond flex flex-col gap-8">
-        <div className="grid md:grid-cols-3 grid-cols-1"></div>
+        {/* Gallery */}
+        <div className="grid md:grid-cols-3 align-middle justify-items-center container gap-2 grid-cols-1">
+          {[
+            "md:rotate-1 lg:translate-x-1",
+            "md:-rotate-2 lg:-translate-y-3",
+            "md:rotate-2 lg:-translate-x-3 lg:-translate-y-1",
+          ].map((rotation, i) => (
+            <img
+              key={i}
+              className={`${rotation} max-w-72 w-full lg:hover:scale-150 lg:duration-500 lg:hover:translate-y-0 lg:hover:translate-x-0  shadow-none lg:hover:shadow-xl lg:transition lg:hover:z-10 lg:hover:rotate-0`}
+              src={`assets/images/polaroid-${i}.jpg`}
+              alt=""
+            />
+          ))}
+        </div>
         <p className="font-niconne text-3xl">The Wedding Of</p>
 
         <div className="flex flex-col gap-2">
