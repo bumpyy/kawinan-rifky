@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import Content from "./components/Content";
 import Hero from "./components/Hero";
+import Preload from "./components/Preload";
 
 function App() {
   const [rDay, setrDay] = useState(0); //countdown 2 hours.
   const [rHour, setrHour] = useState(0); //countdown 2 hours.
   const [rMin, setrMin] = useState(0);
   const [rSec, setrSec] = useState(0);
-
+  const [open, setOpen] = useState(false);
   const getTimeUntil = (deadline: string) => {
     const time = Date.parse(deadline) - Date.parse(new Date().toUTCString());
 
@@ -41,19 +42,24 @@ function App() {
 
   return (
     <>
-      {/* <Preload /> */}
-      <Hero
-        day={rDay}
-        hour={rHour}
-        min={rMin}
-        sec={rSec}
-      />
-      <Content
-        day={rDay}
-        hour={rHour}
-        min={rMin}
-        sec={rSec}
-      />
+      {open ? (
+        <>
+          <Hero
+            day={rDay}
+            hour={rHour}
+            min={rMin}
+            sec={rSec}
+          />
+          <Content
+            day={rDay}
+            hour={rHour}
+            min={rMin}
+            sec={rSec}
+          />
+        </>
+      ) : (
+        <Preload openHandler={setOpen} />
+      )}
     </>
   );
 }

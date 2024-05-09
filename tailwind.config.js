@@ -13,6 +13,9 @@ export default {
       padding: "1rem",
     },
     extend: {
+      backgroundImage: {
+        holdingHand: "url('/assets/images/header-bg.jpg')",
+      },
       colors: {
         primary: "#c7b09d",
         secondary: "#eae6df",
@@ -21,6 +24,26 @@ export default {
         gaegu: "Gaegu",
         niconne: "Niconne",
         garamond: "EB Garamond",
+      },
+      animation: {
+        fade: "fadeIn .5s ease-in-out forwards",
+        "slide-up": "slide-up .5s ease-in-out forwards",
+        "slide-down": "slide-down .5s ease-in-out",
+      },
+
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        "slide-up": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(-100%)" },
+        },
+        "slide-down": {
+          from: { transform: "translateY(-100%)" },
+          to: { transform: "translateY(0%)" },
+        },
       },
     },
   },
