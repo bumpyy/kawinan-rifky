@@ -10,28 +10,29 @@ export default function Greeting() {
       <div
         data-aos="fade-up"
         data-aos-easing="linear"
-        className="text-primary  text-5xl"
+        className="text-6xl"
       >
-        <p>َنوُﺮﱠﻛَﺬَﺗ ْﻢُﻜﱠﻠَﻌَﻟ ِﻦْﻴَﺟْوَز ﺎَﻨْﻘَﻠَﺧ ٍءْﻲَﺷ ﱢﻞُﻛ ْﻦِﻣَو</p>
+        وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ
       </div>
 
       <div
         data-aos="fade-up"
         data-aos-easing="linear"
-        className="text-center text-lg md:w-3/4 lg:w-3/5"
+        className="text-center text-2xl font-garamond md:w-3/4 lg:w-1/2 flex-col flex items-center"
       >
         Artinya: “Dan segala sesuatu Kami Ciptakan Berpasang-pasangan supaya
-        kamu mengingat kebesaran Allah.” QS Az - Zariyat: 49
+        kamu mengingat kebesaran Allah.”
+        <span>QS Az - Zariyat: 49</span>
       </div>
 
       <Divider />
-      <div className="text-center flex flex-col gap-8">
+      <div className="text-center font-garamond flex flex-col gap-8">
         <div className="grid md:grid-cols-3 grid-cols-1"></div>
-        <p className="font-parisienne text-3xl">The Wedding Of</p>
+        <p className="font-niconne text-3xl">The Wedding Of</p>
 
         <div className="flex flex-col gap-2">
           <h3 className="text-4xl font-bold ">{MEMPELAI_PRIA_lengkap}</h3>
-          <div>
+          <div className="text-2xl">
             <p>Putra Pertama dari</p>
             <p>Bapak Iwan Fajar Mulyawan & Ibu Neneng Ika</p>
           </div>

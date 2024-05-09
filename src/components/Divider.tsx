@@ -1,4 +1,8 @@
-export default function Divider() {
+export default function Divider({
+  imageUrl = "assets/images/divider.png",
+}: {
+  imageUrl?: string;
+}) {
   return (
     <div
       data-aos="fade-up"
@@ -6,7 +10,8 @@ export default function Divider() {
       className="max-w-lg mx-auto"
     >
       <img
-        src="assets/images/divider.png"
+        draggable="false"
+        src={imageUrl}
         className="divider has-text-centered"
         alt="~~~"
       />

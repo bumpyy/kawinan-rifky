@@ -30,6 +30,7 @@ export default function Content({ day, hour, min, sec }: TimePropsType) {
       <About />
       <div className="w-full">
         <img
+          draggable="false"
           className="w-full object-cover"
           src="assets/images/about-bg.jpg"
           alt=""

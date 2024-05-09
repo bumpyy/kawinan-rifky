@@ -1,3 +1,5 @@
+import Divider from "../Divider";
+
 export default function About() {
   type TimelineDataType = {
     date: number | string;
@@ -28,8 +30,11 @@ export default function About() {
       <h2 className="capitalize text-4xl">Our Love story</h2>
 
       <div className="lg:w-3/4 flex flex-col gap-12 mx-auto">
-        {TIMELINE_DATA.map((data) => (
-          <div className="flex">
+        {TIMELINE_DATA.map((data, index) => (
+          <div
+            className="flex"
+            key={index}
+          >
             <div className="basis-1/5 text-xl font-semibold shrink-0">
               {data.date}
             </div>
@@ -37,6 +42,7 @@ export default function About() {
           </div>
         ))}
       </div>
+      <Divider imageUrl="assets/images/divider-love.png" />
     </section>
   );
 }
