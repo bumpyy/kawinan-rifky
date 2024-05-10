@@ -1,3 +1,4 @@
+import tailwindAnimated from "tailwindcss-animated";
 import tailwindFluidType from "tailwindcss-fluid-type";
 
 /** @type {import('tailwindcss').Config} */
@@ -81,5 +82,6 @@ export default {
         // ...
       },
     }),
+    tailwindAnimated,
   ],
 };
