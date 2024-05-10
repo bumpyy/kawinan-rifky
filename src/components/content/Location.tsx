@@ -18,7 +18,7 @@ export default function Location() {
         data-aos-easing="linear"
       >
         <a
-          href="#"
+          href="https://maps.app.goo.gl/xubkdGhLja2ZAGHh7"
           target="_blank"
           className=""
           data-tooltip="Open map"

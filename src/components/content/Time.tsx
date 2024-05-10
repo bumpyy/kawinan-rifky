@@ -70,7 +70,7 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
           data-aos-easing="linear"
         >
           <a
-            href="https://www.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Rifky+%26+Fira&location=Jl.+Setu+Baru+No.1%2C+Sukmajaya%2C+Kec.+Sukmajaya%2C%0AKota+Depok%2C+Jawa+Barat+16412&dates=20240525T060000Z%2F20240525T123000Z"
+            href="https://www.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Andre+%26+Fira&location=Jl.+Setu+Baru+No.1%2C+Sukmajaya%2C+Kec.+Sukmajaya%2C%0AKota+Depok%2C+Jawa+Barat+16412&dates=20240525T060000Z%2F20240525T123000Z"
             target="_blank"
             className=""
             data-tooltip="Add to Calendar"
