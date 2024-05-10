@@ -8,7 +8,7 @@ import Time from "./content/Time";
 
 export default function Content({ day, hour, min, sec }: TimePropsType) {
   return (
-    <div>
+    <div className="relative z-10 bg-secondary">
       {/* <!-- Begin regular-section--> */}
       <Greeting />
       {/* <!-- End regular-section--> */}

@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav";
 export default function Hero({ day, hour, min, sec }: TimePropsType) {
   return (
     <>
-      <div className="animate-fade text-white shadow-lg bg-fixed text-xl hero filter bg-primary ">
+      <div className="animate-fade sticky top-0 -z-10 text-white shadow-lg bg-fixed text-xl hero filter bg-primary ">
         {/*  Begin Mobile Nav  */}
         <MobileNav />
         {/*  End Mobile Nav  */}
