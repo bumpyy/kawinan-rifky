@@ -1,4 +1,5 @@
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { toast } from "sonner";
 
 export default function Rsvp() {
   return (
@@ -24,7 +25,12 @@ export default function Rsvp() {
           <p className="font-semibold text2">BCA - 6395468069</p>
           <p className="font-semibold">Syafira Nurhanifa Fauziah</p>
 
-          <CopyToClipboard text={"6395468069"}>
+          <CopyToClipboard
+            text={"6395468069"}
+            onCopy={() => {
+              toast("Number copied");
+            }}
+          >
             <div className="cursor-pointer flex items-center gap-2 text-xl">
               <img
                 src="assets/icons/copy.png"
@@ -41,7 +47,12 @@ export default function Rsvp() {
           <p className="font-semibold">BCA - 6395468077</p>
           <p className="font-semibold">Muhammad Rifky Andreawan</p>
 
-          <CopyToClipboard text={"6395468077"}>
+          <CopyToClipboard
+            text={"6395468077"}
+            onCopy={() => {
+              toast("Number copied");
+            }}
+          >
             <div className="cursor-pointer flex items-center gap-2 text-xl">
               <img
                 src="assets/icons/copy.png"

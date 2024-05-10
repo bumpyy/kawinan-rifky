@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Toaster } from "sonner";
 import Content from "./components/Content";
 import Hero from "./components/Hero";
 import Preload from "./components/Preload";
@@ -60,6 +61,7 @@ function App() {
       ) : (
         <Preload openHandler={setOpen} />
       )}
+      <Toaster />
     </>
   );
 }
