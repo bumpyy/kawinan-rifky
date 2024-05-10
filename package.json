@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@radix-ui/react-alert-dialog": "^1.0.5",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@supabase/supabase-js": "^2.43.1",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "class-variance-authority": "^0.7.0",
@@ -19,11 +23,13 @@
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.4",
     "react-vertical-timeline-component": "^3.6.0",
     "sonner": "^1.4.41",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "tailwindcss-fluid-type": "^2.0.6"
+    "tailwindcss-fluid-type": "^2.0.6",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.11",

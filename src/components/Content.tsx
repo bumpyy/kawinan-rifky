@@ -5,6 +5,7 @@ import Greeting from "./content/Greeting";
 import Location from "./content/Location";
 import Rsvp from "./content/Rsvp";
 import Time from "./content/Time";
+import Wish from "./wish";
 
 export default function Content({ day, hour, min, sec }: TimePropsType) {
   return (
@@ -41,6 +42,8 @@ export default function Content({ day, hour, min, sec }: TimePropsType) {
       {/* <!-- Begin RSVP Content --> */}
       <Rsvp />
       {/* <!-- End RSVP Content --> */}
+      <Divider />
+      <Wish />
     </div>
   );
 }

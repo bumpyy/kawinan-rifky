@@ -28,7 +28,7 @@ export default function Rsvp() {
           <CopyToClipboard
             text={"6395468069"}
             onCopy={() => {
-              toast("Number copied");
+              toast("Syafira Nurhanifa Fauziah");
             }}
           >
             <div className="cursor-pointer flex items-center gap-2 text-xl">
@@ -50,7 +50,7 @@ export default function Rsvp() {
           <CopyToClipboard
             text={"6395468077"}
             onCopy={() => {
-              toast("Number copied");
+              toast("Muhammad Rifky Andreawan");
             }}
           >
             <div className="cursor-pointer flex items-center gap-2 text-xl">
