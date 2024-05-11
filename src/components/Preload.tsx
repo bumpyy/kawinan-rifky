@@ -52,7 +52,7 @@ export default function Preload({
         <p className=" animate-once animate-fade-up text-xl animate-delay-300">
           you are cordially invited to our wedding
         </p>
-        <div className="mt-8 animate-once animate-jump-in  animate-delay-[350ms] lg:max-w-72 cursor-pointer max-w-48 md:max-w-56">
+        <div className="mt-8 animate-once animate-jump-in animate-delay-[350ms] lg:max-w-72 cursor-pointer max-w-48 md:max-w-56">
           <img
             onClick={() => {
               setIsAnimating(true);
