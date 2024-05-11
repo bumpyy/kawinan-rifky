@@ -10,6 +10,7 @@ import {
 import { yupResolver } from "@hookform/resolvers/yup";
 import { createClient } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 import { useForm } from "react-hook-form";
 import { object, string } from "yup";
 
@@ -90,12 +91,20 @@ export default function Wish() {
 
   return (
     <section className="md:w-1/2 py-8 flex flex-col gap-4 mx-auto w-full text-center">
-      <h2 className="text-7xl font-bold">Make a Wish</h2>
-      <p className="">
+      <ScrollAnimation animateIn="tada">
+        <h2 className="text-7xl font-bold">Make a Wish</h2>
+      </ScrollAnimation>
+      <p
+        className="text-xl"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+      >
         Suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu berkenan
         hadir dan memberikan restu kepada kami.
       </p>
       <form
+        data-aos="fade-up"
+        data-aos-easing="linear"
         className="mt-2 flex flex-col md:mx-8 gap-4"
         onSubmit={handleSubmit(onSubmit)}
       >
@@ -133,7 +142,11 @@ export default function Wish() {
         </button>
       </form>
 
-      <div className="max-h-[40rem] overflow-y-auto p-4 flex flex-col gap-4">
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        className="max-h-[40rem] overflow-y-auto p-4 flex flex-col gap-4"
+      >
         {wish?.map((data) => (
           <Comment
             key={data.id}

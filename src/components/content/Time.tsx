@@ -1,3 +1,4 @@
+import ScrollAnimation from "react-animate-on-scroll";
 import { DATE } from "../../lib/constants";
 import { TimePropsType } from "../../lib/types";
 import Divider from "../Divider";
@@ -28,13 +29,19 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
       id="waktu"
     >
       <h2 className="capitalize text-5xl font-semibold">save the date</h2>
-      <h2 className="capitalize text-7xl font-semibold">our special day</h2>
+      <ScrollAnimation animateIn="tada">
+        <h3 className="capitalize text-7xl font-semibold">our special day</h3>
+      </ScrollAnimation>
 
-      <div className="grid max-w-96 w-full mx-auto justify-items-center my-8 grid-cols-2 md:grid-cols-3 gap-4 ">
+      <div
+        className="grid max-w-96 w-full mx-auto justify-items-center my-8 grid-cols-3 gap-4 "
+        data-aos="fade-up"
+        data-aos-easing="linear"
+      >
         <CountdownCard
           text="Hari"
           countdown={day}
-          className="md:col-span-3"
+          className="col-span-3"
         />
 
         <CountdownCard
@@ -53,7 +60,11 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
       </div>
 
       <div className="flex flex-col gap-4 items-center font-semibold">
-        <p className="text-5xl">
+        <p
+          className="text-5xl"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+        >
           {DATE.toLocaleString("id", { weekday: "long" })},{" "}
           {DATE.toLocaleString("id", {
             day: "2-digit",
@@ -83,7 +94,11 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
             />
           </a>
         </div>
-        <blockquote className="text-center space-y-2   text-2xl">
+        <blockquote
+          className="text-center space-y-2 text-xl mt-4"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+        >
           <p>
             “Once in awhile, right in the middle of an ordinary life, love gives
             us a fairy tale.”
@@ -120,7 +135,11 @@ function DateGroup({
   end?: number;
 }) {
   return (
-    <div className=" flex flex-col gap-2 text-2xl">
+    <div
+      className=" flex flex-col gap-2 text-2xl"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+    >
       <p className="font-bold capitalize text-4xl font-">{title}</p>
       <p className="">
         {DATE.toLocaleString("id", { weekday: "long" })},{" "}

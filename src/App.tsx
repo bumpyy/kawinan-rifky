@@ -1,7 +1,9 @@
+import "animate.css/animate.compat.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { Toaster } from "sonner";
 import Content from "./components/Content";
-import Hero from "./components/Hero";
 import Preload from "./components/Preload";
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
   const [open, setOpen] = useState(false);
   const getTimeUntil = (deadline: string) => {
     const time = Date.parse(deadline) - Date.parse(new Date().toUTCString());
+
+    AOS.init();
 
     if (time < 0) {
       setrDay(0);
@@ -45,12 +49,12 @@ function App() {
     <>
       {open ? (
         <>
-          <Hero
+          {/* <Hero
             day={rDay}
             hour={rHour}
             min={rMin}
             sec={rSec}
-          />
+          /> */}
           <Content
             day={rDay}
             hour={rHour}

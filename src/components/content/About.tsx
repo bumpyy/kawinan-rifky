@@ -1,3 +1,4 @@
+import ScrollAnimation from "react-animate-on-scroll";
 import Divider from "../Divider";
 
 export default function About() {
@@ -30,18 +31,21 @@ export default function About() {
       id="tentang-mempelai"
       className="text-center flex flex-col gap-8"
     >
-      <h2 className="capitalize text-6xl font-bold">Our Love story</h2>
-
+      <ScrollAnimation animateIn="tada">
+        <h2 className="capitalize text-6xl font-bold">Our Love story</h2>
+      </ScrollAnimation>
       <div className="lg:w-3/4 flex flex-col gap-12 mx-auto">
         {TIMELINE_DATA.map((data, index) => (
           <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
             className="flex max-md:flex-col"
             key={index}
           >
             <div className="basis-1/6 text-4xl font-semibold shrink-0">
               {data.date}
             </div>
-            <div className="text-3xl">{data.text}</div>
+            <div className="text-2xl">{data.text}</div>
           </div>
         ))}
       </div>

@@ -1,3 +1,4 @@
+import ScrollAnimation from "react-animate-on-scroll";
 import { TimePropsType } from "../lib/types";
 import Divider from "./Divider";
 import About from "./content/About";
@@ -9,7 +10,7 @@ import Wish from "./wish";
 
 export default function Content({ day, hour, min, sec }: TimePropsType) {
   return (
-    <div className="relative z-10 bg-secondary">
+    <div className="bg-secondary">
       {/* <!-- Begin regular-section--> */}
       <Greeting />
       {/* <!-- End regular-section--> */}
@@ -29,14 +30,16 @@ export default function Content({ day, hour, min, sec }: TimePropsType) {
       <Divider />
       {/* <!-- Begin Tentang Rifky and Fira --> */}
       <About />
-      <div className="w-full">
-        <img
-          draggable="false"
-          className="w-full object-cover"
-          src="assets/images/about-bg.jpg"
-          alt=""
-        />
-      </div>
+      <ScrollAnimation animateIn="fadeIn">
+        <div className="w-full">
+          <img
+            draggable="false"
+            className="w-full object-cover"
+            src="assets/images/about-bg.jpg"
+            alt=""
+          />
+        </div>
+      </ScrollAnimation>
       {/* <!-- End Tentang Rifky dan Fira --> */}
       <Divider />
       {/* <!-- Begin RSVP Content --> */}

@@ -5,7 +5,7 @@ export default function Divider({
 }) {
   return (
     <div
-      data-aos="fade-up"
+      data-aos="zoom-in"
       data-aos-easing="linear"
       className="max-w-lg container my-8 mx-auto"
     >

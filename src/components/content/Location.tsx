@@ -4,7 +4,11 @@ export default function Location() {
       className="text-center flex items-center flex-col gap-8 mt-10"
       id="lokasi"
     >
-      <div className="container flex flex-col gap-2">
+      <div
+        className="container flex flex-col gap-2"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+      >
         <p className="font-semibold text-4xl capitalize">Seetitik Kopi</p>
         <p className="">
           Jl. Setu Baru No.1, Sukmajaya, Kec. Sukmajaya, Kota Depok, Jawa Barat

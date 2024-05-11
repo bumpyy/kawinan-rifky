@@ -30,11 +30,11 @@ export default function Preload({
         <h1 className="text-3xl animate-once animate-fade-down">
           The Wedding Of
         </h1>
-        <h2 className="text text-9xl font-semibold  animate-fade-down animate-once animate-delay-200">
+        <h2 className="text text-9xl font-semibold  animate-fade-down animate-once animate-delay-200 lowercase">
           {MEMPELAI_PRIA} & {MEMPELAI_WANITA}
         </h2>
       </div>
-      <div className="w-full lg:-my-8 -z-10 ">
+      <div className="w-full lg:-my-8 mb-4 -z-10 ">
         <img
           className="w-full opacity-0  animate-fade animate-once animate-delay-200"
           src="assets/images/header-bg.jpg"
@@ -42,17 +42,17 @@ export default function Preload({
           draggable="false"
         />
       </div>
-      <div className="flex flex-col max-lg:gap-4 items-center">
-        <p className="text-6xl font-semibold animate-once animate-fade-up">
+      <div className="flex container flex-col max-lg:gap-2 items-center">
+        <p className="text-6xl -mb-2 font-semibold animate-once animate-fade-up">
           dear
         </p>
         <p className="text-8xl font-semibold  animate-fade-up animate-once animate-delay-200">
           {guestName ? guestName : "Guest"}
         </p>
-        <p className=" animate-once animate-fade-up  animate-delay-300">
+        <p className=" animate-once animate-fade-up text-xl animate-delay-300">
           you are cordially invited to our wedding
         </p>
-        <div className="mt-4 animate-once animate-jump-in  animate-delay-[350ms] lg:max-w-72 cursor-pointer max-w-48 md:max-w-56">
+        <div className="mt-8 animate-once animate-jump-in  animate-delay-[350ms] lg:max-w-72 cursor-pointer max-w-48 md:max-w-56">
           <img
             onClick={() => {
               setIsAnimating(true);
