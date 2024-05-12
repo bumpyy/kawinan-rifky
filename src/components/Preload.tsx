@@ -24,7 +24,7 @@ export default function Preload({
       }}
       className={`
       ${isAnimating ? "animate-once animate-slide-up" : ""}
-      flex text-center h-full fixed flex-col max-lg:gap-4 justify-center items-center w-full bg-secondary`}
+      flex text-center h-full justify-around fixed flex-col max-lg:gap-4  items-center w-full bg-secondary`}
     >
       <div>
         <h1 className="text-3xl animate-once animate-fade-down">
@@ -34,7 +34,7 @@ export default function Preload({
           {MEMPELAI_PRIA} & {MEMPELAI_WANITA}
         </h2>
       </div>
-      <div className="w-full lg:-my-8 mb-4 -z-10 ">
+      <div className="w-full -my-36  -z-10 ">
         <img
           className="w-full opacity-0  animate-fade animate-once animate-delay-200"
           src="assets/images/header-bg.jpg"
@@ -52,21 +52,19 @@ export default function Preload({
         <p className=" animate-once animate-fade-up sm:text-lg text-base lg:text-xl animate-delay-300">
           you are cordially invited to our wedding
         </p>
-        <div className="mt-10 animate-once animate-jump-in animate-delay-[350ms] lg:max-w-72 cursor-pointer max-w-48 md:max-w-56">
-          <img
-            onClick={() => {
-              setIsAnimating(true);
-              const audio = document.getElementById(
-                "audio"
-              ) as HTMLAudioElement;
+      </div>
+      <div className=" animate-once animate-jump-in animate-delay-[350ms] lg:max-w-72 cursor-pointer max-w-48 md:max-w-56">
+        <img
+          onClick={() => {
+            setIsAnimating(true);
+            const audio = document.getElementById("audio") as HTMLAudioElement;
 
-              audio?.play();
-            }}
-            src="assets/images/open-invitation.png"
-            alt="open invitation"
-            draggable="false"
-          />
-        </div>
+            audio?.play();
+          }}
+          src="assets/images/open-invitation.png"
+          alt="open invitation"
+          draggable="false"
+        />
       </div>
     </div>
   );

@@ -23,6 +23,7 @@ export default {
     extend: {
       backgroundImage: {
         holdingHand: "url('/assets/images/header-bg.jpg')",
+        end: "url('/assets/images/end.jpg')",
       },
       height: {
         "screen-dynamic": "100dvh",

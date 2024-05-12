@@ -8,29 +8,25 @@ export default function Greeting() {
   return (
     <section
       id="home"
-      className="flex text-center flex-col gap-6 lg:gap-12 justify-center my-12 items-center "
+      className="flex flex-col items-center justify-center gap-4 my-12 text-center lg:gap-12 "
     >
-      <div
-        className="text-6xl"
-        data-aos="fade-down"
-      >
-        وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ
-      </div>
-
-      <div
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        className="text-center text-xl font-garamond md:w-3/4 lg:w-1/2 flex-col flex items-center"
-      >
-        Artinya: “Dan segala sesuatu Kami Ciptakan Berpasang-pasangan supaya
-        kamu mengingat kebesaran Allah.”
-        <span>QS Az - Zariyat: 49</span>
+      <div data-aos="fade-down">
+        <p className="text-lg font-gaegu sm:text-6xl">
+          وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ
+        </p>
+        <div className="flex flex-col items-center justify-center text-xs text-center sm:text-xl font-garamond">
+          <p className="md:w-3/4 ">
+            Artinya: “Dan segala sesuatu Kami Ciptakan Berpasang-pasangan supaya
+            kamu mengingat kebesaran Allah.”
+            <span>QS Az - Zariyat: 49</span>
+          </p>
+        </div>
       </div>
 
       <Divider />
-      <div className="text-center font-garamond flex flex-col gap-8">
+      <div className="flex flex-col gap-8 text-center font-garamond">
         {/* Gallery */}
-        <div className="grid md:grid-cols-3 align-middle justify-items-center container gap-2 grid-cols-1">
+        <div className="container grid grid-cols-1 gap-2 align-middle md:grid-cols-3 justify-items-center">
           {[
             "md:rotate-1 lg:translate-x-1",
             "md:-rotate-2 lg:-translate-y-3",
@@ -50,7 +46,7 @@ export default function Greeting() {
           ))}
         </div>
         <p
-          className="font-niconne z-0 text-3xl"
+          className="z-0 text-3xl font-niconne"
           data-aos="fade-up"
         >
           The Wedding Of
@@ -58,13 +54,13 @@ export default function Greeting() {
 
         <div className="flex flex-col gap-2">
           <h3
-            className="text-4xl font-bold "
+            className="text-3xl font-bold sm:text-4xl"
             data-aos="fade-up"
           >
             {MEMPELAI_PRIA_lengkap}
           </h3>
           <div
-            className="text-xl text-left"
+            className="text-base text-lg text-left sm:text-lg md:text-xl"
             data-aos="fade-up"
           >
             <p>Putra Pertama dari Bapak</p>
@@ -73,7 +69,7 @@ export default function Greeting() {
         </div>
 
         <h3
-          className="text-4xl font-bold "
+          className="text-3xl font-bold sm:text-4xl"
           data-aos="fade-up"
         >
           &
@@ -81,13 +77,13 @@ export default function Greeting() {
 
         <div className="flex flex-col gap-2">
           <h3
-            className="text-4xl font-bold "
+            className="text-3xl font-bold sm:text-4xl"
             data-aos="fade-up"
           >
             {MEMPELAI_WANITA_lengkap}
           </h3>
           <div
-            className="text-xl text-left"
+            className="text-base text-lg text-left sm:text-lg md:text-xl"
             data-aos="fade-up"
           >
             <p>Putri Pertama dari</p>

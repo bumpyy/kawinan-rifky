@@ -2,6 +2,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { TimePropsType } from "../lib/types";
 import Divider from "./Divider";
 import About from "./content/About";
+import EndSection from "./content/EndSection";
 import Greeting from "./content/Greeting";
 import Location from "./content/Location";
 import Rsvp from "./content/Rsvp";
@@ -10,7 +11,7 @@ import Wish from "./wish";
 
 export default function Content({ day, hour, min, sec }: TimePropsType) {
   return (
-    <div className="bg-secondary relative overflow-x-hidden z-10">
+    <div className="relative z-10 overflow-x-hidden bg-secondary">
       {/* <!-- Begin regular-section--> */}
       <Greeting />
       {/* <!-- End regular-section--> */}
@@ -34,7 +35,7 @@ export default function Content({ day, hour, min, sec }: TimePropsType) {
         <div className="w-full">
           <img
             draggable="false"
-            className="w-full object-cover"
+            className="object-cover w-full"
             src="assets/images/about-bg.jpg"
             alt=""
           />
@@ -47,6 +48,8 @@ export default function Content({ day, hour, min, sec }: TimePropsType) {
       {/* <!-- End RSVP Content --> */}
       <Divider />
       <Wish />
+
+      <EndSection />
     </div>
   );
 }

@@ -6,21 +6,25 @@ export default function Rsvp() {
   return (
     <section
       id="share-love"
-      className="text-center flex-col flex gap-4"
+      className="flex flex-col gap-4 text-center"
     >
-      <div className="my-8 flex flex-col gap-8 items-center text-xl">
-        <ScrollAnimation animateIn="tada">
-          <h2 className="text-6xl capitalize font-semibold">Share Love</h2>
-        </ScrollAnimation>
-        <p
-          className="font-semibold md:w-1/2 lg:w-4/5 sm:w-4/5"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-        >
-          Doa & restu anda di pernikahan kami tentunya sangat berarti. Namun
-          jika anda ingin memberi lebih, kami dengan senang hati menerimanya dan
-          akan semakin melengkapi kebahagiaan kami.
-        </p>
+      <div className="flex flex-col items-center gap-8 my-8 text-xl">
+        <div>
+          <ScrollAnimation animateIn="tada">
+            <h2 className="text-6xl font-semibold capitalize">Share Love</h2>
+          </ScrollAnimation>
+          <div className="flex flex-col items-center justify-center mt-2 text-xs font-semibold text-center sm:text-xl">
+            <p
+              className=" md:w-1/2 lg:w-4/5 sm:w-4/5"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              Doa & restu anda di pernikahan kami tentunya sangat berarti. Namun
+              jika anda ingin memberi lebih, kami dengan senang hati menerimanya
+              dan akan semakin melengkapi kebahagiaan kami.
+            </p>
+          </div>
+        </div>
         <div
           className="lg:max-w-40 max-w-20 md:max-w-24"
           data-aos="fade-up"
@@ -46,7 +50,7 @@ export default function Rsvp() {
               toast("Syafira Nurhanifa Fauziah tersalin");
             }}
           >
-            <div className="cursor-pointer flex items-center gap-2 text-xl">
+            <div className="flex items-center gap-2 text-xl cursor-pointer">
               <img
                 src="assets/icons/copy.png"
                 alt=""
@@ -72,7 +76,7 @@ export default function Rsvp() {
               toast("Muhammad Rifky Andreawan tersalin");
             }}
           >
-            <div className="cursor-pointer flex items-center gap-2 text-xl">
+            <div className="flex items-center gap-2 text-xl cursor-pointer">
               <img
                 src="assets/icons/copy.png"
                 alt=""
@@ -85,9 +89,9 @@ export default function Rsvp() {
         </div>
       </div>
 
-      <div className="my-8 flex flex-col gap-8 items-center">
+      <div className="flex flex-col items-center gap-8 my-8">
         <ScrollAnimation animateIn="tada">
-          <h2 className="text-6xl capitalize font-semibold">Send Gift</h2>
+          <h2 className="text-6xl font-semibold capitalize">Send Gift</h2>
         </ScrollAnimation>
         <div
           className="lg:max-w-40 max-w-20 md:max-w-24"
@@ -102,15 +106,15 @@ export default function Rsvp() {
         </div>
 
         <div
-          className="md:w-1/2 lg:w-4/5 sm:w-4/5 font-bold "
+          className="flex flex-col items-center justify-center mb-4 text-xs font-semibold text-center font-boldflex sm:text-xl"
           data-aos="fade-up"
           data-aos-easing="linear"
         >
-          <p className="mb-4">
+          <p className="md:w-1/2 lg:w-4/5 sm:w-4/5">
             Jl. Sindangkarsa No.199 rt03/010 (Gg. Haji Jamal) Kel. Sukamaju
             Baru, Kota Depok, Tapos, Jawa Barat, 16455
           </p>
-          <p>Nama Penerima: Syafira / Fira</p>
+          <p className="mt-2">Nama Penerima: Syafira / Fira</p>
         </div>
       </div>
     </section>

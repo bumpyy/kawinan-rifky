@@ -1,7 +1,7 @@
 export default function Location() {
   return (
     <section
-      className="text-center flex items-center flex-col gap-8 mt-10"
+      className="flex flex-col items-center gap-8 mt-10 text-center"
       id="lokasi"
     >
       <div
@@ -9,11 +9,13 @@ export default function Location() {
         data-aos="fade-up"
         data-aos-easing="linear"
       >
-        <p className="font-semibold text-4xl capitalize">Seetitik Kopi</p>
-        <p className="">
-          Jl. Setu Baru No.1, Sukmajaya, Kec. Sukmajaya, Kota Depok,{" "}
-          <span className="text-nowrap">Jawa Barat</span> 16412
+        <p className="text-3xl font-semibold capitalize sm:text-4xl">
+          Seetitik Kopi
         </p>
+        <div className="max-sm:text-lg">
+          <p className="text-nowrap">Jl. Setu Baru No.1, Sukmajaya,</p>
+          <p className="text-nowrap">Kota Depok, Jawa Barat</p>
+        </div>
       </div>
 
       <div
