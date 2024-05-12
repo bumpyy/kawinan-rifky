@@ -13,8 +13,8 @@ export default function HeroContent() {
           </h2>
           <div className="font-garamond text-xl font-semibold">
             <h3
-              data-aos="fade-up"
-              data-aos-easing="linear"
+            //   data-aos="fade-up"
+            //   data-aos-easing="linear"
             >
               {DATE.toLocaleString("id", {
                 day: "2-digit",
