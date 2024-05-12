@@ -3,7 +3,7 @@ import { DATE, MEMPELAI_PRIA, MEMPELAI_WANITA } from "../lib/constants.js";
 export default function HeroContent() {
   return (
     <div className=" justify-center flex flex-col h-screen-dynamic items-center">
-      <div className="container h-3/5  flex flex-col justify-center items-center">
+      <div className="container h-3/5  flex flex-col justify-end items-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center font-garamond mb-4">
           Join and Celebrate Our Wedding
         </h1>
