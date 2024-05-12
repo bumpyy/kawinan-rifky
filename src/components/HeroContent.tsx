@@ -2,16 +2,16 @@ import { DATE, MEMPELAI_PRIA, MEMPELAI_WANITA } from "../lib/constants.js";
 
 export default function HeroContent() {
   return (
-    <div className=" justify-center flex flex-col h-screen-dynamic items-center">
-      <div className="container h-3/5  flex flex-col justify-end items-center">
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center font-garamond mb-4">
+    <div className="flex flex-col items-center justify-center h-screen-dynamic">
+      <div className="container flex flex-col items-center justify-end h-3/5">
+        <h1 className="mb-4 text-lg font-bold text-center sm:text-xl md:text-2xl lg:text-3xl font-garamond">
           Join and Celebrate Our Wedding
         </h1>
-        <div className="text-center flex flex-col gap-2 ">
-          <h2 className="text-title font-gaegu leading-3 lowercase font-bold">
+        <div className="flex flex-col gap-2 text-center ">
+          <h2 className="font-bold leading-3 lowercase text-title font-gaegu">
             {MEMPELAI_PRIA} & {MEMPELAI_WANITA}
           </h2>
-          <div className="font-garamond text-xl font-semibold">
+          <div className="text-xl font-semibold font-garamond">
             <h3
             //   data-aos="fade-up"
             //   data-aos-easing="linear"
@@ -28,16 +28,16 @@ export default function HeroContent() {
         </div>
       </div>
 
-      <div className="h-3/5 w-auto">
+      <div className="w-auto h-3/5">
         <img
-          className="object-contain object-bottom relative h-full w-auto"
+          className="relative object-contain object-bottom w-auto h-full"
           src="assets/images/hero.jpg"
           alt=""
         />
       </div>
 
       {/*  Start Countdown  */}
-      {/* <ul className="flex gap-1 text-5xl justify-center text-center">
+      {/* <ul className="flex justify-center gap-1 text-5xl text-center">
         <li>
           <span className="">
             {day.toLocaleString("id", {
