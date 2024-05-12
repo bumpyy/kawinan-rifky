@@ -37,7 +37,7 @@ export default function Greeting() {
             "md:rotate-2 lg:-translate-x-3 lg:-translate-y-1",
           ].map((rotation, i) => (
             <div
-              className="lg:z-10"
+              className="lg:z-10 lg:hover:z-20"
               data-aos="fade-up"
               key={i}
             >
