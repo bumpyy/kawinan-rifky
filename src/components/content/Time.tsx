@@ -100,8 +100,8 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
           data-aos-easing="linear"
         >
           <p>
-            “Once in awhile, right in the middle of an ordinary life, love gives
-            us a fairy tale.”
+            “Once in a while, right in the middle of an ordinary life, love
+            gives us a fairy tale.”
           </p>
           <p>- Unknown</p>
         </blockquote>

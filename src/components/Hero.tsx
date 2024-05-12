@@ -1,29 +1,21 @@
-import { TimePropsType } from "../lib/types";
 import HeroContent from "./HeroContent";
-import HeroFoot from "./HeroFoot";
-import MobileNav from "./MobileNav";
 
-export default function Hero({ day, hour, min, sec }: TimePropsType) {
+export default function Hero() {
   return (
     <>
-      <div className="animate-fade sticky top-0 -z-10 text-white shadow-lg bg-fixed text-xl hero filter bg-primary ">
+      <div className="animate-fade sticky top-0 -z-10 bg-secondary ">
         {/*  Begin Mobile Nav  */}
-        <MobileNav />
+        {/* <MobileNav /> */}
         {/*  End Mobile Nav  */}
 
         {/*  Begin Hero Content */}
-        <HeroContent
-          day={day}
-          hour={hour}
-          min={min}
-          sec={sec}
-        />
+        <HeroContent />
         {/* //  End Hero Content */}
 
         {/* //  Begin Hero Menu  */}
         {/* //  End Hero Menu  */}
       </div>
-      <HeroFoot />
+      {/* <HeroFoot /> */}
     </>
   );
 }

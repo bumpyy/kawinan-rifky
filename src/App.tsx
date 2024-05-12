@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { Toaster } from "sonner";
 import Content from "./components/Content";
+import Hero from "./components/Hero";
 import Preload from "./components/Preload";
 
 function App() {
@@ -49,12 +50,7 @@ function App() {
     <>
       {open ? (
         <>
-          {/* <Hero
-            day={rDay}
-            hour={rHour}
-            min={rMin}
-            sec={rSec}
-          /> */}
+          <Hero />
           <Content
             day={rDay}
             hour={rHour}

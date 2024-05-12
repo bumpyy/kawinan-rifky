@@ -10,7 +10,7 @@ import Wish from "./wish";
 
 export default function Content({ day, hour, min, sec }: TimePropsType) {
   return (
-    <div className="bg-secondary">
+    <div className="bg-secondary relative overflow-x-hidden z-10">
       {/* <!-- Begin regular-section--> */}
       <Greeting />
       {/* <!-- End regular-section--> */}

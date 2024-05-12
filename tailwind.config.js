@@ -130,9 +130,9 @@ export default {
       values: {
         // ...
         title: [
-          12,
+          11,
           {
-            lineHeight: 1.6,
+            lineHeight: 1,
             letterSpacing: "-0.1rem",
           },
         ],

@@ -11,8 +11,8 @@ export default function Location() {
       >
         <p className="font-semibold text-4xl capitalize">Seetitik Kopi</p>
         <p className="">
-          Jl. Setu Baru No.1, Sukmajaya, Kec. Sukmajaya, Kota Depok, Jawa Barat
-          16412
+          Jl. Setu Baru No.1, Sukmajaya, Kec. Sukmajaya, Kota Depok,{" "}
+          <span className="text-nowrap">Jawa Barat</span> 16412
         </p>
       </div>
 

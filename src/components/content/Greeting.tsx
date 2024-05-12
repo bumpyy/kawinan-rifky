@@ -64,10 +64,11 @@ export default function Greeting() {
             {MEMPELAI_PRIA_lengkap}
           </h3>
           <div
-            className="text-xl"
+            className="text-xl text-left"
             data-aos="fade-up"
           >
-            <p>Putra Pertama dari Bapak Iwan Fajar Mulyawan & Ibu Neneng Ika</p>
+            <p>Putra Pertama dari Bapak</p>
+            <p>Iwan Fajar Mulyawan & Ibu Neneng Ika</p>
           </div>
         </div>
 
@@ -86,10 +87,11 @@ export default function Greeting() {
             {MEMPELAI_WANITA_lengkap}
           </h3>
           <div
-            className="text-xl"
+            className="text-xl text-left"
             data-aos="fade-up"
           >
-            <p>Putri Pertama dari Bapak Irwan Ramelan & Ibu Rini Susanti</p>
+            <p>Putri Pertama dari</p>
+            <p> Bapak Irwan Ramelan & Ibu Rini Susanti</p>
           </div>
         </div>
       </div>
