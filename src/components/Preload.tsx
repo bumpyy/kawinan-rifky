@@ -56,8 +56,9 @@ export default function Preload({
           <img
             onClick={() => {
               setIsAnimating(true);
-              const audio: HTMLElement | null =
-                document.getElementById("audio");
+              const audio = document.getElementById(
+                "audio"
+              ) as HTMLAudioElement;
 
               audio?.play();
             }}
