@@ -60,7 +60,7 @@ export default function Greeting() {
             {MEMPELAI_PRIA_lengkap}
           </h3>
           <div
-            className="text-base text-lg text-left sm:text-lg md:text-xl"
+            className="text-base text-lg text-center sm:text-lg md:text-xl"
             data-aos="fade-up"
           >
             <p>Putra Pertama dari</p>
@@ -83,7 +83,7 @@ export default function Greeting() {
             {MEMPELAI_WANITA_lengkap}
           </h3>
           <div
-            className="text-base text-lg text-left sm:text-lg md:text-xl"
+            className="text-base text-lg text-center sm:text-lg md:text-xl"
             data-aos="fade-up"
           >
             <p>Putri Pertama dari</p>

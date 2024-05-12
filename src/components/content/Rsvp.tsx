@@ -19,7 +19,7 @@ export default function Rsvp() {
               data-aos="fade-up"
               data-aos-easing="linear"
             >
-              Doa & restu anda di pernikahan kami tentunya sangat berarti. Namun
+              doa & restu anda di pernikahan kami tentunya sangat berarti. Namun
               jika anda ingin memberi lebih, kami dengan senang hati menerimanya
               dan akan semakin melengkapi kebahagiaan kami.
             </p>
