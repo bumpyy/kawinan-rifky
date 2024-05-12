@@ -28,8 +28,8 @@ export default function Time({ day, hour, min, sec }: TimePropsType) {
       className="text-center flex items-center flex-col gap-4"
       id="waktu"
     >
-      <h2 className="capitalize text-5xl font-semibold">save the date</h2>
       <ScrollAnimation animateIn="tada">
+        <h2 className="capitalize text-5xl font-semibold">save the date</h2>
         <h3 className="capitalize text-7xl font-semibold">our special day</h3>
       </ScrollAnimation>
 
