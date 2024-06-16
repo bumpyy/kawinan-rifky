@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { MEMPELAI_PRIA, MEMPELAI_WANITA } from "../lib/constants";
 
 export default function Preload({
@@ -9,10 +9,6 @@ export default function Preload({
   const [isAnimating, setIsAnimating] = useState(false);
   const sp = new URLSearchParams(window.location.search);
   const guestName = sp.get("guest"); // world
-
-  useEffect(() => {
-    return () => {};
-  }, []);
 
   return (
     <div

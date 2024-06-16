@@ -26,7 +26,7 @@ export default {
         end: "url('/assets/images/end.jpg')",
       },
       height: {
-        "screen-dynamic": "100dvh",
+        "screen-dynamic": "100svh",
       },
 
       fontFamily: {
